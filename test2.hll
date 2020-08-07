@@ -1,0 +1,45 @@
+-----------------------
+Halix Assembler Listing
+   (HASM version 11)
+-----------------------
+              
+Source file: test2.hal 
+Listing file: test2.hll 
+Machine code file: test2.hlx 
+              
+          # ------------------------------------------
+          # Halix Program
+          #
+          # Program Name: smaller.hal
+          # Author:       US
+          # Date:         1/13
+          # ----------------------------------------
+          
+          # --------------------------------------------------------------
+          # Follow the pseudo-code below.
+          #
+          #     cin >> A >> B;
+          #     if (A < B)
+          #        cout << A;
+          #     else
+          #        cout << B;
+          # --------------------------------------------------------------
+          
+                   .ALLOC 3
+ 
+00  9999  A        .DATA
+01  9999  B        .DATA
+ 
+                   .BEGIN
+ 
+00  0100            READ A
+01  0101            READ B
+ 
+02  0300            LOAD A
+03  1801            CLT B
+04  1207            BRF ALT
+05  0200            WRITE A 
+06  1008            BRANCH ENDIF
+07  0201  ALT:      WRITE B
+08  9900  ENDIF:    HALT
+                    .END

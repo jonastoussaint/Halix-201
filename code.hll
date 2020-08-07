@@ -1,0 +1,13 @@
+                   .BEGIN
+ 
+00  0100            READ A
+01  0101            READ B
+ 
+02  0300            LOAD A
+03  1801            CLT B
+04  1207            BRF ALT
+05  0200            WRITE A 
+06  1008            BRANCH ENDIF
+07  0201  ALT:      WRITE B
+08  9900  ENDIF:    HALT
+                    .END

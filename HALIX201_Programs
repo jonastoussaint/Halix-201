@@ -1,0 +1,79 @@
+CDA 3101 Fall 2018
+Halix Programming 
+PROJECT/PROGRAM ID:  HALIX201
+
+Due:        Sept 14, 2018 by 3pm 
+   
+
+
+==========================================================================
+Using the HALIX assembler in Codio to assemble and execute source
+program xxxx.hal.
+
+   1) Open terminal
+   2) Command: ./hasm.crun xxxx.hal
+
+==========================================================================
+
+Program deployment/submission:
+
+   1) Create Codio deployment target CIS
+      - Deploy to folder CODIO_HALIX201/
+
+==========================================================================
+
+
+------------------------------------------------------------
+1. (validate.hal) Write a program that reads and performs input validation
+   on two numbers, then display the accepted values.
+
+   do
+     read Num1
+   while (Num1 > 0);
+
+   do
+     read Num2
+   while (Num2 <= 0);
+
+   Sum = Num1 + Num2
+   Prod = Num2 * Num1
+
+   Display Num1, Num2, Sum, Prod
+
+
+
+------------------------------------------------------------
+2. (logic.hal) Write a program that implements the pseudo-code below.
+
+   Read a, b
+   Display a, b
+
+   if ( a>0 && b<0 )
+   {
+      Q = a/b; Display Q.
+   }
+
+   if ( a<5 || a>=10 )
+   {
+      P = a * b; Display P.
+   }
+   
+
+------------------------------------------------------------
+3. (countBy3.hal) Write a program that implements the pseudo-code below.
+
+   Read Limit
+   Display Limit
+   
+   for (num=0; num<=Limit; num += 3)
+      Display num 
+
+   Display Limit
+   Display num 
+
+
+------------------------------------------------------------
+4. (maxOf5.hal) Write a program that reads 5 values, and determines the
+   maximum value.
+
+

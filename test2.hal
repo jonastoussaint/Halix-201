@@ -1,0 +1,35 @@
+# ------------------------------------------
+# Halix Program
+#
+# Program Name: smaller.hal
+# Author:       US
+# Date:         1/13
+# ----------------------------------------
+
+# --------------------------------------------------------------
+# Follow the pseudo-code below.
+#
+#     cin >> A >> B;
+#     if (A < B)
+#        cout << A;
+#     else
+#        cout << B;
+# --------------------------------------------------------------
+
+         .ALLOC 3
+A        .DATA
+B        .DATA
+
+         .BEGIN
+        
+          READ A
+          READ B
+
+          LOAD A
+          CLT B
+          BRF ALT
+          WRITE A 
+          BRANCH ENDIF
+ALT:      WRITE B
+ENDIF:    HALT
+          .END

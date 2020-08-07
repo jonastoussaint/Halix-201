@@ -1,0 +1,59 @@
+# ------------------------------------------ 
+# Halix Program
+#
+# Assignment ID: halix201
+# Program Name:  validate.hal
+# Purpose:       Write a program that reads and performs input validation
+#                on two numbers, then display the accepted values.
+#
+# Author:        Jonas Toussaint
+# Due Date:          09-16-2018
+# ----------------------------------------
+# ----------------------------------------
+#  do     
+#      read Num1
+#   while (Num1 > 0);
+#
+#   do
+#     read Num2
+#   while (Num2 <= 0);
+#
+#   Sum = Num1 + Num2
+#   Prod = Num2 * Num1
+#
+#   Display Num1, Num2, Sum, Prod
+# ----------------------------------------
+
+.ALLOC 4
+Num1 .DATA
+Num2 .DATA
+Sum  .DATA
+Prod .DATA
+
+.BEGIN
+
+LPTEST1:  READ Num1
+          CLEAR
+          CLT Num1
+          BRF  LPTEST1
+
+LPTEST2:
+READ Num2
+CLEAR
+CLT Num2
+BRF
+
+DISPLAY:
+CLEAR
+LOAD Num1
+ADD NUM2
+
+
+
+
+
+
+
+
+
+
